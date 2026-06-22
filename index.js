@@ -352,5 +352,120 @@ const { version } = require("react")
 
 // QUE ES ANGULAR CLI
 
+// Command Line Interface es una herramienta de linea de comandos que facilita createRef, ejecutar, probar y 
+// administrar proyectos de Angular.
+// En lugar de crear todos los archivos manualmente, Angular CLI los genera automaticamente.
 
+// Con Angular puedes:
+// - Crear proyectos Angular
+// - Crear componentes
+// - Crear servicios
+// - Ejecutar la aplicacion
+// - Compilar el proyecto
+// - Ejecutar pruebas
+// - Generar codigo automaticamente
+
+// INSTALACION
+
+// Se debe tener instalado Node.js
+
+// npm install -g @angular/cli
+
+
+// Verificar instalación
+
+// ng version o ng --version
+
+
+// Crear un proyecto
+
+// ng new mi-proyecto
+
+// Se creará automaticamente:
+// mi proyecto/
+
+// src/
+// node_modules/
+// angular.json
+// package.json
+// tsconfig.json
+
+// Entrar al proyecto
+
+// cd mi-proyecto
+
+
+// Ejecutar la aplicación
+
+// ng serve
+
+// Despues abre:
+// http://localhost:4200
+
+
+// Crea un componente
+
+// ng generate component usuario o ng g c usuario
+
+// Genera:
+// usuario/
+
+// usuario.component.ts
+// usuario.component.html
+// usuario.component.css
+// usuario.component.spec.ts
+
+
+// Crear un servicio
+
+// ng generate service usuario o ng g s usuario
+
+
+// Compilar el proyecto
+
+// ng build
+
+// Genera una carpeta:
+
+// dist/
+
+
+// COMANDOS MAS USADOS
+
+// ng new proyecto = crear proyecto
+// ng serve = Ejecutar aplicación
+// ng build = Compilar proyecto
+// ng generate component nombre = Crear componente
+// ng generate service nombre = Crear servicio
+// ng test = Ejecutar pruebas
+// ng version = Ver versión instalada
+
+
+// Angular CLI es la herramienta oficial de Angular que automatiza la creación y administración de proyectos. 
+// Es como un "asistente" que genera archivos, ejecuta la aplicación y facilita el desarrollo sin tener que configurar 
+// todo manualmente.
+
+
+
+
+// COMANDOS 
+
+// Verificar version = ng version 
+// Crear proyecto nuevo = ng new mi-proyecto
+// Entrar al proyecto = cd mi-proyecto
+// Ejecutar la aplicacion = ng serve
+// Ejecutar y abrir automaticamente el navegador = ng serve --open
+// Crear un componente = ng generate component nombre
+// Crear un servicio = ng generate service nombre
+// Crear una directiva = ng generate directive nombre
+// Crear un pipe = ng generate pipe nombre
+// Crear una interfaz = ng generate interface nombre
+// Crear una clase = ng generate class nombre
+// Crear un modulo = ng generate module nombre
+// Compilar el proyecto = ng build 
+// Ejecutar pruebas unitarias = ng test
+// Ejecutar pruebas end-to-end = ng e2e
+// Analizar el proyecto = ng lint
+// Actualizar Angular = ng update
+// Ver ayuda de Angular CLI = ng help
 
