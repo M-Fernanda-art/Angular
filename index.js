@@ -528,3 +528,197 @@ const { version } = require("react")
 // Al crear el proyecto, normalmente preguntará si deseas usar Standalone Components.
 
 // Los standalone Components son componentes independientes que eliminan la necesidad de usar modulos (NgModule) para muchas tareas. Angular los promueve porque hacen las aplicaciones más simples, modernas y faciles de mantener.
+
+
+
+
+// ESTRUCTURA DE UN PROYECTO
+
+// Cuando creas un proyecto con:
+
+// ng new mi-proyecto
+
+// Angular genera una estructura de carpetas y archivos organizada.
+
+
+// ESTRUCTURA GENERAL 
+
+// mi-proyecto/
+// │
+// ├── node_modules/
+// ├── src/
+// ├── .angular/
+// ├── .vscode/
+// ├── angular.json
+// ├── package.json
+// ├── package-lock.json
+// ├── tsconfig.json
+// └── README.md
+
+// node_modules
+
+// node_modules/
+
+// Contiene todas las dependencias instaladas con npm.
+
+// Ejemplos:
+// Angular
+// TypeScript
+// RxJS
+
+// Nunca se sube a GitHub, se agrega al .gitignore
+
+// SRC
+
+// Es la carpeta más importante, aqui esta el codigo de la aplicacion
+
+// src/
+// │
+// ├── app/
+// ├── assets/
+// ├── index.html
+// ├── main.ts
+// ├── styles.css
+// └── favicon.ico
+
+// APP 
+
+// Contiene componentes, servicios, interfaces y logica de la aplicacion
+
+// app/
+// │
+// ├── app.component.ts
+// ├── app.component.html
+// ├── app.component.css
+// └── app.routes.ts
+
+// APP.COMPONENTS.TS
+
+// Componente principal
+
+// @Component({
+//   selector: 'app-root',
+//   templateUrl: './app.component.html'
+// })
+// export class AppComponent {
+// }
+
+// Es el punto de entrada visual de la aplicacion
+
+// APP.COMPONENT.HTML
+
+// Contiene el HTML principal
+
+// <h1>Hola Angular</h1>
+
+// APP.COMPONENT.CSS
+
+// Contiene estilos del componente
+
+// h1 {
+//     color: blue;
+// }
+
+// APP.ROUTES.TS
+
+// Define rutas
+
+// export const routes = [
+//     {
+//         path: '',
+//         component: InicioComponent
+//     }
+// ];
+
+// ASSETS
+
+// Guarda recursos estaticos
+
+// assets/
+// │
+// ├── images/
+// ├── videos/
+// └── documentos/
+
+// Ejemplos:
+// Imagenes
+// PDFs
+// Iconos
+
+// INDEX.HTML
+
+// Pagina principal que carga Angular
+
+// <body>
+//   <app-root></app-root>
+// </body>
+
+// Angular reemplaza app-root por el contenido de la aplicacion
+
+// MAIN.TS
+
+// Punto de inicio de Angular
+
+// bootstrapApplication(AppComponent);
+
+// Es el primer archivo que se ejecuta
+
+// STYLES.CSS
+
+// Estilos globales
+
+// body {
+//     margin: 0;
+// }
+
+// Afectan toda la aplicacion
+
+// ANGULAR.JSON
+
+// Archivo de configuracion del proyecto
+
+// Define:
+// Compilación
+// Estilos
+// Assets
+// Configuracion de Angular
+
+// PACKAGE.JSON
+
+// Guarda información del proyecto
+
+// {
+//   "name": "mi-proyecto",
+//   "dependencies": {
+//     "@angular/core": "^20.0.0"
+//   }
+// }
+
+// TSCONFIG.JSON
+
+// Configuracion de TypeScript
+
+// Define
+// Reglas de compilacion
+// Version de JavaScript
+// Opciones de tipado
+
+// ESTRUCTURA TIPICA DE UN PROYECTO REAL
+
+// src/
+// │
+// ├── app/
+// │   ├── components/
+// │   ├── services/
+// │   ├── interfaces/
+// │   ├── models/
+// │   ├── pages/
+// │   └── app.routes.ts
+// │
+// ├── assets/
+// │   ├── images/
+// │   └── icons/
+// │
+// ├── styles.css
+// ├── index.html
+// └── main.ts
