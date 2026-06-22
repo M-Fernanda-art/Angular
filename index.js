@@ -469,3 +469,62 @@ const { version } = require("react")
 // Actualizar Angular = ng update
 // Ver ayuda de Angular CLI = ng help
 
+
+// STANDALONE COMPONENTS
+
+// Son componentes que pueden funcionar por si solos, sin necesidad de declararlos dentro de un modulo (NgModule).
+// Fueron introducidos en Angular para simplificar la estructura de las aplicaciones.
+
+// Antes en Angular habia que declararlo 
+// @NgModule({
+//     declarations: [
+//         AppComponent,
+//         UsuarioComponent
+//     ]
+// })
+// export class AppModule {}
+
+// Ahora el componente se declara como independiente
+// import { Component } from '@angular/core';
+
+// @Component({
+//     selector: 'app-usuario',
+//     standalone: true,
+//     template: '<h1>Hola Angular</h1>'
+// })
+// export class UsuarioComponent {}
+
+// Observa:
+// standalone: true
+
+// Eso le indica a Angular que el componente no necesita estar en un modulo.
+
+// VENTAJAS
+
+// - Menos archivos
+// - Codigo mas simple
+// - Mejor rendimiento
+// - Mas facil de reutilizar
+
+// COMO CREARLO
+
+// ng generate component usuario --standalone
+
+// IMPORTAR MODULOS DE ANGULAR
+
+// import { CommonModule } from '@angular/common';
+
+// @Component({
+//   standalone: true,
+//   imports: [CommonModule]
+// })
+// export class UsuarioComponent {}
+
+
+// CREAR UN PORYECTO USANDO STANDALONE
+
+// ng new mi-proyecto
+
+// Al crear el proyecto, normalmente preguntará si deseas usar Standalone Components.
+
+// Los standalone Components son componentes independientes que eliminan la necesidad de usar modulos (NgModule) para muchas tareas. Angular los promueve porque hacen las aplicaciones más simples, modernas y faciles de mantener.
