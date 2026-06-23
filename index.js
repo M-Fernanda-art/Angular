@@ -722,3 +722,6 @@ const { version } = require("react")
 // ├── styles.css
 // ├── index.html
 // └── main.ts
+
+
+// NOTA: Creé dos ejemplos, uno de registro y otro de productos.
